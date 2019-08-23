@@ -1,0 +1,266 @@
+@charset 'utf-8'; 
+
+body, html{
+	margin: 0;
+}
+
+main{
+	width: auto;
+}
+
+
+/*début de la partie header*/
+#header-desktop{
+	display: none;
+}
+
+#header-mobile{
+	display: block;
+	background: #1a1919;
+	color: white;
+	padding-bottom: 1px;
+	width: 100%;
+}
+
+#header-title{
+	font-family: "Quicksand", sans-serif;
+	flex-direction: column;
+	justify-content: space-around;
+	text-align: center;
+	padding: 10px;
+}
+
+#header-title h1, #header-title h2, #header-title p{
+	margin: 0;
+}
+
+#header-title h1{
+	font-weight: bold;
+	font-size: 3em;
+	color: #ca143d;
+	margin-bottom: 5px;
+}
+
+#header-title h2{
+	font-size: 1.5em;
+	color: white;
+	margin-bottom: 5px;
+}
+
+#header-title p{
+	font-size: 1.3em;
+	color: #eeb643;
+	margin-bottom: 10px;
+}
+
+#search-bar{
+	max-width: 100%;
+	box-sizing: content-box;
+	padding: 0;
+	font-family: 'Quicksand', sans-serif
+}
+
+#search-box{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 10px;
+}
+
+
+/*début de la partie article*/
+#principal-section{
+	width: auto;
+	flex-direction: column;
+	margin: 0;
+	padding: 5px;
+}
+
+#sidebar-section{
+	display: none;
+}
+
+#galerie-title{
+	width: auto;
+	padding: 20px;
+}
+
+#galerie-title h1{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#galerie-title p{
+	font-size: 1.3em;
+	text-align: justify;
+}
+
+#article-selection, .article-selection{
+	flex-direction: column;
+	width: 	auto;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0;
+	margin-bottom: 10%;
+
+}
+
+#article-selection img{
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	margin: 5px;
+}
+
+#article-section{
+	margin-bottom: 10%;
+}
+
+#article-section, #head-article, #head-description-text, #lifestyle-section, #spirituality-section{
+width: auto;
+padding: 3px;
+}
+
+#lifestyle-section, #spirituality-section{
+	flex-direction: column;
+}
+
+#lifestyle-section iframe, #spirituality-section iframe{
+	width: 100%;
+	height: 400px;
+}
+
+#head-article-img{
+	width: auto;
+}
+
+#head-article-img img{
+	margin: 0;
+	max-width: 95%;
+	margin-left: 23px;
+}
+
+#head-description-text{
+	font-size: 1em;
+	text-align: center;
+}
+
+#footer{
+	display: none;
+}
+
+#mobile-navigation{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: #1A1919;
+	height: 100px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	color: white;
+}
+
+#navigation{
+	margin: 0;
+	width: auto;
+	padding-right: 120px;
+	margin-left: 50px;
+}
+
+#navigation a{
+	color: white;
+	margin-left: 30px;
+	padding-right: 30px;
+	font-size: 2.5em;
+	width: 150%;
+	height: 100%;
+	border-right: 2px solid white;
+	
+}
+
+#navigation a:hover #mobile-navigation{
+	margin-left: 10px;
+}
+
+.accueil, .articles, .album, .contact, .connection{
+	transition: background 0.3s ease-in;
+	color: white;
+}
+
+#article-conteneur{
+	width: auto;
+}
+
+.accueil:hover{
+	background: #006aa8;
+	padding: 12px;
+	color: white;
+	box-sizing: content-box;
+	margin: 0;
+}
+
+.articles:hover{
+	background: #ca143c;
+	padding: 12px;
+	color: black;
+	box-sizing: content-box;
+	margin: 0;
+}
+
+.album:hover{
+	background: #eeb643;
+	padding: 12px;
+	color: black;
+	box-sizing: content-box;
+	margin: 0;
+}
+
+.connection:hover{
+	background: #eeb643;
+	padding: 12px;
+	color: black;
+	box-sizing: content-box;
+	margin: 0;
+}
+
+.contact:hover{
+	background: green;
+	padding: 12px;
+	color: white;
+	box-sizing: content-box;
+	margin: 0;
+}
+
+
+/*début du design de la carte*/
+#first-row, #second-row, #third-row, #section-article-suggestion{
+flex-direction: column;
+margin-bottom: 3%;
+width: auto;
+}
+
+#article-selection{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding-left: 0;
+}
+
+.article-selection{
+	flex-direction: column;
+
+}
+
+#card{
+	width: auto;
+	margin-bottom: 10px;
+}
+
+#card-img img{
+	width: 100%;
+	object-fit: cover;
+}
+
+#card-text{
+	text-align: justify;
+}

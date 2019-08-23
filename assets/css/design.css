@@ -1,0 +1,787 @@
+@charset 'utf-8';
+
+/*Google font*/
+font-family: 'Open Sans', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+
+/*Définition des styles principaux de la page*/
+body, html{
+	margin: 0;
+	padding: 0;
+}
+
+main{
+	
+	color: #232222;
+	
+}
+
+.separator{
+	width: 80%;
+	height: 1px;
+	background: #eeb643;
+	background-size: 0;
+}
+
+#mobile-navigation{
+	display: none;
+}
+
+/*En-tête et lien de navigation*/
+a, a:hover{
+	text-decoration: none;
+	color: #232222;
+	font-family: 'Quicksand', sans-serif;
+}
+
+/*Design header*/
+
+header{
+	margin-bottom: 20px;
+	width: 100%;
+
+}
+
+#banner{
+	margin: 0;
+}
+
+#header-mobile{
+	display: none;
+}
+
+#datetime{
+	font-family: 'Quicksand', sans-serif;
+	margin-right: 2px;
+	font-size: 15px
+}
+
+/*début bannière*/
+#banner{
+	background: url('../img/sunrise.jpg')center;
+	height: 350px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-shadow: 3px 3px 10px #232222;
+	text-transform: uppercase;
+	margin: 0;
+}
+
+#banner h1{
+	font-size: 5em;
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+}
+
+#banner-description p{
+font-size: 2.5em;
+font-style: italic;
+font-family: 'Quicksand', sans-serif;
+font-weight: 300;
+color: white;
+text-align: center;
+text-transform: none;
+margin: 20px;text-shadow: 3px 3px 10px #232222;
+}
+
+#banner-description h1, #banner-description small{
+	text-align: center;
+	margin: 0;
+}
+
+#banner-description small{
+	text-shadow: 3px 3px 3px #232222;
+	color: white;
+	font-size: 2em;
+	text-align: center;
+	margin-left: 45%;
+	text-transform: none;
+	color: #eeb643;
+}
+
+/*Début description*/
+
+#banner-navigation{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	background: #1a1919;
+	color: white;
+	height: 70px;
+}
+
+#search-bar{
+	width: 600px;
+	height: 30px;
+	box-sizing: none;
+}
+
+input[type="placeholder"]{
+	font-size: 1.3em;
+	font-style: italic;
+	font-family: 'Quicksand', sans-serif;
+}
+
+#banner-navigation a{
+	color: white;
+	font-size: 1em;
+	font-family: 'Quicksand', sans-serif;
+	margin-right: 20px;
+	transition: background 0.3s ease-in;
+}
+
+#banner-navigation a:hover{
+	background: #eeb643;
+	padding: 10px;
+	color: #232222;
+	font-weight: bold;
+}
+
+#navigation{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#navigation ul{
+list-style-type: none;
+}
+
+#navigation ul li{
+	display: inline-block;
+}
+
+#principal-section{
+	display: flex;
+	justify-content: space-between;
+}
+
+#article-section{
+	width: 900px;
+	
+}
+
+/*Design section*/
+
+#article-conteneur{
+	width: 900px;
+	padding: 10px;
+}
+
+#head-article{
+	margin-bottom: 50px;
+}
+
+#head-article-img{
+	width: 800px;
+}
+
+#head-article-img img{
+	margin-left: 65px;
+	max-width: 100%;
+}
+
+#head-article-title{
+	text-transform: uppercase;
+	font-size: 2em;
+	font-weight: bold;
+	margin-top: 2px;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+}
+
+#head-description-text{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.3em;
+	text-align: justify;
+	width: 800px;
+	padding: 10px;
+	text-align: center;
+	margin: 0;
+}
+
+#head-article-link{
+	border: 2px solid black;
+	padding: 5px;
+	transition: background 0.3s ease-in;
+}
+
+#head-article-link:hover{
+	background: #eeb643;
+	color: #232222;
+	border : 1px solid black;
+}
+
+#sidebar-section{
+	width: 200px;
+}
+
+#head-section-img{
+	width: 600px;
+	height: 300px;
+	position: relative;
+	background: red;
+	margin: auto;
+}
+
+#card-social-media{
+	font-size: 1.3em;
+	transition: background 0.3s ease-in;
+}
+
+.share:hover{
+	color: #006aa8;
+}
+
+.like:hover{
+color: #ca143c;
+}
+
+.comments:hover{
+	color: green;
+}
+
+#head-section-text p{
+font-size: 1.3em;
+font-family: 'Roboto', sans-serif;
+}
+
+#head-section-link{
+	border: 2px solid black;
+	padding: 10px;
+	color: #232222;
+	width: 120px;
+	margin: auto;
+	transition: background 0.3s ease-in;
+	font-family: 'Quicksand', sans-serif;
+}
+
+#head-section-link:hover{
+	background: #eeb643;
+	font-weight: bold;
+}
+
+/*début de l'article à la une*/
+#about-section{
+	width: 890px;
+	bottom: 2px solid red;
+}
+
+#figcatpion-img{
+	margin-left: 65px;
+	max-width: 100%;
+}
+
+/*début de la section lifestyle*/
+#time{
+	margin-right: 20px;
+}
+
+#section-social-media a{
+	margin-right: 20px;
+}
+
+#lifestyle-section, #spirituality-section {
+display: flex;
+justify-content: space-between;
+width: 890px;
+padding: 10px;
+margin-bottom: 20px;
+}
+
+#first-article{
+	margin-top: 25px;
+}
+
+#article-title{
+	font-size: 1.4em;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+#article-description{
+	display: flex;
+	justify-content: space-around;
+}
+
+#article-description a{
+	margin-right: 20px;
+}
+
+#article-text{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	text-align: justify;
+	width: 75%;
+	margin: auto;
+}
+
+#article-text a{
+	padding: 5px;
+	border: 1px solid black;
+	color: #ca143c;
+	margin-left: 40%;
+	transition: background 0.3s ease-in;
+}
+#article-text a:hover{
+	border: 1px solid black;
+	background: #232222;
+	font-weight: bold;
+}
+
+#badge{
+	border: 1px solid black;
+	margin-bottom: 50px;
+	position: absolute;
+	width: 75px;
+	font-family: 'Roboto', sans-serif;
+	padding: 2px;
+	text-align: center;
+	text-transform: capitalize;
+	background: #ca13de;
+}
+
+/*début de la section d'article principale*/
+#article-text p{
+font-size: 1.2em;
+text-align: justify;
+font-family: 'Open Sans', sans-serif;
+line-height: 30px;
+}
+
+#caption-img{
+	width: 800px;
+	margin-left: 20px;
+}
+
+#caption-img img{
+	width: 575px;
+	height: 353px;
+}
+
+#footquote{
+	text-align: center;
+	font-size: 1.2em;
+}
+
+#footquote cite{
+	font-family: 'Quicksand', sans-serif;
+}
+
+#blockquote p{
+	text-align: center;
+	font-style: italic;
+	font-size: 1.5em;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+}
+
+/*début de la suggestion d'article*/
+#card{
+	width: 300px;
+	height: auto;
+	border-radius: 5px 5px 0 0;
+	border: 1px solid black;
+	margin-right: 10px;
+}
+
+#card-img img{
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+}
+
+#card-body{
+	background: #eeb643;
+	height: auto;
+	padding: 5px;
+	text-align: justify;
+	transition: background 0.3s ease-in;
+}
+
+#card-body:hover{
+	background: #1a1919;
+	color: white;
+}
+
+#card-body:hover h1{
+	color: #ca143c;
+}
+
+#card-title{
+	font-size: 10px;
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+}
+
+#section-article-suggestion{
+	display: flex;
+	justify-content: space-between;
+}
+
+#card-description{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px;
+}
+
+#card-text{
+	font-family: 'Open Sans', sans-serif;
+	line-height: 25px;
+	text-align: justify;
+}
+
+#card-social-media a{
+margin-right: 15px;
+}
+
+/*début de la sélection d'article*/
+
+#article-selection-title, #galerie-title h1{
+	text-decoration: underline;
+	font-size: 1.3em;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold: ;
+	text-transform: uppercase;
+	padding: 5px;
+}
+
+#galerie-title p{
+	text-align: justify;
+	font-size: 1.3em;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#article-selection{
+display: flex;
+flex-direction: column;
+}
+
+#article-selection img{
+	width: 275px;
+	height: 250px;
+	transition: 0.3s ease-in;
+	margin-right: 10px;
+	object-fit: cover;
+}
+
+#first-row, #second-row, #third-row, #four-row{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+#first-row img, #second-row img, #third-row img, #four-row img{
+	width: 300px;
+	height: 250px;
+	transition: 0.3s ease-in;
+	margin-right: 10px;
+	object-fit: cover;
+}
+
+#first-row img:hover, #second-row img:hover, #third-row img:hover, #four-row img:hover{
+	background: white;
+	opacity: 0.7;
+	border-radius: 5px ;
+}
+
+/*fin de la sélection d'article*/
+
+
+/*début de la section à propos*/
+#about-title{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+
+
+#about-article{
+	flex: 2;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.3;
+	line-height: 30px;
+	text-align: justify;
+	padding: 50px;
+}
+
+#about-img{
+	flex: 1
+	width: 300px;
+	height: 300px;
+	text-align: center;
+}
+
+#about-img img{
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+/*fin de la section à propos*/
+
+
+/*début de la section contact*/
+
+#contact-section{
+	padding: 50px;
+	text-align: justify;
+}
+
+#contact-section-text{
+font-family: 'Roboto', sans-serif;
+font-size: 1em;
+}
+
+input[name="subject"]{
+	width: 400px;
+	height: 25px;
+	padding-left: 5px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+input[name="object"]{
+	width: 500px;
+	height: 25px;
+	padding-left: 5px;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+}
+
+textarea{
+	padding-left: 5px;
+	font-family: 'Quicksand', sans-serif;
+	font-style: italic;
+	resize: none;
+}
+
+#button{
+	text-align: center;
+	padding: 8px;
+	font-family: 'Quicksand', sans-serif;
+	margin-left: 35%;
+}
+
+
+#contact-section-title{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.3em;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: underline;
+}
+
+/*fin de la section contact*/
+
+/*début de la sidebar*/
+
+#sidebar-section{
+	padding: 10px;
+	text-align: center;
+	width: 300px;
+}
+
+/*section réseaux sociaux*/
+#lmsb-logo{
+	font-size: 2.3em;
+	font-family: 'Open Sans', sans-serif;
+	color: #ca143c;
+	margin-bottom: 3px;
+}
+
+#sidebar-social-media, #sidebar-recent-article-content, {
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+#sidebar-social-media h1{
+	text-decoration: underline;
+}
+
+#sidebar-social-media p{
+	font-family: 'Roboto', sans-serif;
+}
+
+#article-social-media{
+	display: flex;
+	justify-content: space-around;
+}
+
+/*section newsletter*/
+#sidebar-newsletter-form{
+	font-family: 'Open Sans', sans-serif;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+#sidebar-newsletter-title, #sidebar-recent-article-content,  #sidebar-archives-title{
+	font-size: 1em;
+	color: #ca143c;
+	text-transform: capitalize;
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: underline;
+}
+
+input[type="mail"]{
+	border: 1px solid black;
+	width: 95%;
+	height: 30px;
+	padding-left: 5px;
+	font-family: 'Quicksand', sans-serif;
+	font-style: italic;
+	margin-bottom: 5px;
+}
+
+input[type="submit"]{
+	border: 2px solid black;
+	background: none;
+	padding: 5px;
+	color: #232222;
+	font-size: 1em;
+	transition: background 0.3s ease-in;
+}
+
+input[type="submit"]:hover{
+	background: #eeb643;
+	border: 1px solid black;
+}
+
+input[type="search"]{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 1.2em;
+	padding: 10px;
+	box-sizing: 0;
+	font-style: italic;
+}
+
+/*section articles récents*/
+
+#sidebar-recent-article-content li{
+font-size: 15px;
+list-style-type: none;
+text-align: left;
+margin-bottom: 15px;
+transition: background 0.3s ease-in;
+}
+
+#sidebar-recent-article-content li:hover{
+	padding: 10px;
+	background: #eeb643;
+}
+
+#sidebar-recent-article-content ul{
+	margin: 0;
+	padding-left: 1px;
+}
+
+/*début de la section archives*/
+#sidebar-archives-content ul{
+	margin: 0;
+	padding-left: 10px;
+}
+
+#sidebar-archives-content li{
+text-align: left;
+list-style-type: none;
+font-family: 'Quicksand', sans-serif;
+margin-bottom: 6px;
+transition: background 0.3s ease-in;
+}
+
+#sidebar-archives-content li:hover{
+	padding: 10px;
+	background: #eeb643;
+	font-weight: bold;
+}
+/*fin de la sidebar*/
+
+/*début du footer*/
+#footer{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background: #1a1919;
+	color: white;
+	justify-content: center;
+	padding-bottom: 10px;
+}
+
+#social-media-link{
+	display: flex;
+	justify-content: space-between;
+	width: 300px;
+	margin-left: 37%;
+}
+
+#footer-text{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.3em;
+}
+
+.luv, .patience{
+	color: red;
+}
+
+#social-media-link, #article-social-media{
+	font-size: 1.3em;
+	transition: background 0.3s ease-in;
+}
+
+#social-media-link a{
+	color: white;
+}
+
+.face, .twitt, .insta, .tube{
+	width: 15px;
+	height: 15px;
+	transition: background 0.3s ease-in;
+}
+
+.face:hover{
+	background: #1877f2;
+	color: white;
+	border-radius: 50%;
+	padding: 10px;
+}
+
+.twitt:hover{
+	background: #1da1f2;
+	color: white;
+	border-radius: 50%;
+	padding: 10px;
+}
+
+.insta:hover{
+	background: #f58f3d;
+	color: white;
+	border-radius: 50%;
+	padding: 10px;
+}
+
+.tube:hover{
+	background: #ff0000;
+	color: white;
+	border-radius: 50%;
+	padding: 10px;
+}
+
+#skywalker{
+	color: #eeb643;
+}
+/*fin du footer*/
+
